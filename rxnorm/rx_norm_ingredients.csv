@@ -375,6 +375,7 @@ rx_cui,name
 2359261,"3-(2-dodecen-1-yl)dihydro-2,5-furandione, (2E)-"
 1376341,"3-(3,4-methylenedioxyphenyl)-2-methylpropanal"
 2475074,3-(3-methyl-2-thienyl)acrylic acid
+2752694,3-(4-isobutylphenyl)-2-methylpropanal
 1944955,"3-(l-menthoxy)-2-methylpropane-1,2-diol"
 2391136,"3-(nonyloxy)1,2-propanediol"
 2370138,"3-(p-methoxyphenyl)propylene-1,2-oxide"
@@ -551,6 +552,7 @@ rx_cui,name
 16689,aceclofenac
 2560400,acefylline methylsilanol mannuronate
 1426379,aceglutamide
+2749415,acellular nerve allograft
 798302,"acellular pertussis vaccine, inactivated"
 2700338,acellular tissue engineered vessel
 1426875,acemannan
@@ -968,6 +970,7 @@ rx_cui,name
 2169285,alpelisib
 535,alpha 1-antitrypsin
 2675320,alpha bisabolene
+2753050,"alpha galactosidase A, human"
 2475361,alpha glucosidase
 236797,alpha hydroxy acids
 1859172,alpha ionone
@@ -1076,6 +1079,7 @@ rx_cui,name
 2540430,ALV-001
 17627,alverine
 480639,alvimopan
+2749854,Alysicarpus longifolius whole extract
 1925581,Alyssoides utriculata extract
 1311039,Amanita muscaria extract
 1310111,Amanita muscaria var. muscaria fruiting body extract
@@ -1387,6 +1391,7 @@ rx_cui,name
 1373205,Apis cerana worker secretion preparation
 285219,Apis mellifera preparation
 259525,Apis mellifera ven protein
+2753162,apitegromab
 2102723,Apium graveolens whole extract
 1364430,apixaban
 1376342,apocarotenal
@@ -1766,6 +1771,7 @@ rx_cui,name
 2600050,Bacillus clausii
 1310844,Bacillus coagulans
 1316426,Bacillus firmus
+2753051,Bacillus licheniformis
 1372568,Bacillus polyfermenticus
 1311119,Bacillus subtilis
 1800077,Bacillus thuringiensis
@@ -1777,6 +1783,7 @@ rx_cui,name
 1292,baclofen
 1310126,Bacopa monniera leaf extract
 1807125,Bacopa monniera whole extract
+2753052,bacteriophage LF82_P2
 852673,bahia grass pollen extract
 1592893,baicalein
 1440261,baicalin
@@ -2135,6 +2142,7 @@ rx_cui,name
 2167166,bis-octyldodecyl dimer dilinoleate - propanediol copolymer
 2286805,bis-oleamido isopropyl alcohol
 1495477,bis-PEG PPG-16-16 PEG-PPG-16-16 dimethicone
+2749407,bis-PEG-10 dimethicone (300 MPA.S)
 1544483,bis-PEG-10 dimethicone dimer dilinoleate copolymer
 1663736,bis-PEG-12 dimethicone (500 MPA.S)
 1858282,bis-PEG-12 dimethicone (70 MPA.S)
@@ -2386,6 +2394,7 @@ rx_cui,name
 2176312,bremelanotide
 2721880,brensocatib
 1147320,brentuximab vedotin
+2751486,brepocitinib
 19685,bretylium
 1310908,Brevibacterium stationis
 2121777,brexanolone
@@ -2783,6 +2792,7 @@ rx_cui,name
 1424676,calteridol
 1346616,Caltha palustris extract
 1311041,Calvatia gigantea extract
+2754674,Calycophyllum multiflorum whole extract
 1951,cambendazole
 1305631,Camelina sativa seed oil
 1744401,Camelina sativa whole extract
@@ -2806,6 +2816,7 @@ rx_cui,name
 1442198,Camellia sinensis var. assamica whole extract
 1356680,Camellia sinensis whole extract
 2590604,Camelus bactrianus hair extract
+2752682,camizestrant
 20129,campesterol
 2395761,camphene
 1952,camphor
@@ -3880,6 +3891,7 @@ rx_cui,name
 1432472,codonopsis lanceolata root extract
 2103292,Codonopsis pilosula root extract
 2119694,Codonopsis pilosula whole extract
+2749855,Codonopsis tubulosa root extract
 1947410,Coenochloris signiensis extract
 1314344,coenzyme A
 1311529,Coffea arabica fruit extract
@@ -3956,6 +3968,7 @@ rx_cui,name
 901191,Concord grape allergenic extract
 1747706,Concord grape juice
 1546420,condoliase
+2749693,conifer acetate
 1309334,coniferyl alcohol
 1313334,coniine
 1328312,Conium maculatum flowering top extract
@@ -3975,6 +3988,7 @@ rx_cui,name
 1331704,Conyza canadensis extract
 895353,Cootamundra wattle pollen extract
 1307772,Copaifera officinalis resin
+2749264,Copaifera officinalis resin oil
 1945077,copanlisib
 1992522,Copernicia alba whole extract
 2587732,Copernicia prunifera whole extract
@@ -4200,6 +4214,7 @@ rx_cui,name
 1547578,Curcuma amada whole extract
 2534440,Curcuma aromatica root extract
 1482794,Curcuma aromatica root oil
+2753783,Curcuma heyneana root extract
 2619674,Curcuma involucrata root extract
 2106558,Curcuma kwangsiensis root extract
 1307655,Curcuma longa leaf extract
@@ -4303,6 +4318,7 @@ rx_cui,name
 2732340,Cyperus rotundus fruit extract
 1307777,Cyperus rotundus root extract
 2263064,Cyperus rotundus whole extract
+2749408,Cyperus scariosus root extract
 1343597,Cypripedium parvifolum root extract
 22051,cyprodenate
 3013,cyproheptadine
@@ -4389,6 +4405,7 @@ rx_cui,name
 3108,dapsone
 22299,daptomycin
 1721947,daratumumab
+2750155,daraxonrasib
 283838,darbepoetin alfa
 2591497,daridorexant
 136198,darifenacin
@@ -4478,6 +4495,7 @@ rx_cui,name
 2570280,Dendrobium moniliforme whole extract
 1420962,Dendrobium nobile stem extract
 2634353,Dendrobium nobile whole extract
+2749265,Dendrobium officinale whole extract
 2569978,dendropanax dentiger root with stem extract
 995703,dendryphiella vinosa allergenic extract
 2197290,"dengue virus live antigen, CYD serotype 1"
@@ -4602,6 +4620,7 @@ rx_cui,name
 1314346,dicetylphosphate
 1923625,Dichapetalum madagascariense bark/leaf extract
 22892,dichloralphenazone
+2747749,dichloro(methylsulfonyl)methane
 3347,dichloroacetate
 89548,dichlorobenzene
 22906,dichlorobenzyl alcohol
@@ -4627,6 +4646,7 @@ rx_cui,name
 1442702,Dictamnus dasycarpus whole extract
 1442997,Dictyopteris polypodioides extract
 1598,dicumarol
+2749809,dicyclanil
 3361,dicyclomine
 3364,didanosine
 1552451,didecyl ether
@@ -4737,6 +4757,7 @@ rx_cui,name
 1363598,dihydroxyethyl cocamine oxide
 2669405,dihydroxyethyl lauramine oxide
 1739230,dihydroxyethyl stearamine oxide
+2750028,dihydroxyethyl stearyl glycinate
 1307792,dihydroxypropyl PEG-5 linoleammonium chloride
 1370590,dihydroxypropyltrimonium
 1363599,diisobutyl adipate
@@ -4901,6 +4922,7 @@ rx_cui,name
 1733677,dipentaerythrityl tri-polyhydroxystearate
 1426773,dipentamethylenethiuram disulfide
 1735328,dipeptide diaminobutyroyl benzylamide diacetate
+2753053,dipeptidyl peptidase 3
 59247,diperodon
 89782,diphemanil
 3498,diphenhydramine
@@ -5261,6 +5283,7 @@ rx_cui,name
 852577,English walnut pollen extract
 2611454,Engraulis japonica extract
 1442172,enilconazole
+2747751,enlicitide
 2675985,enmetazobactam
 2168587,enobosarm
 3925,enoxacin
@@ -5630,6 +5653,7 @@ rx_cui,name
 1547608,Euphorbia amygdaloides extract
 2587596,Euphorbia antisyphilitica whole extract
 1921561,Euphorbia corollata root extract
+2748465,Euphorbia esula whole extract
 2631985,Euphorbia fischeriana root extract
 1347564,Euphorbia hirta extract
 1543077,Euphorbia hirta flowering top extract
@@ -5882,6 +5906,7 @@ rx_cui,name
 2557368,floralozone
 2571857,florbetaben
 1427225,florbetapir
+2754425,floretyrosine F-18
 25086,florfenicol
 2571858,flortaucipir
 25089,flosequinan
@@ -6129,6 +6154,7 @@ rx_cui,name
 2632124,gardenia yellow extract
 1659909,gardenian blue
 2585534,gardenoside
+2749953,garetosmab
 899414,garlic allergenic extract
 325524,garlic powder
 265647,garlic preparation
@@ -6140,6 +6166,7 @@ rx_cui,name
 1358001,Gaultheria procumbens leaf extract
 1310285,Gaultheria procumbens top extract
 2601099,Gaultheria procumbens whole extract
+2747771,gedatolisib
 328134,gefitinib
 2627246,gekko gecko preparation
 4716,gelatin
@@ -6158,6 +6185,7 @@ rx_cui,name
 285153,Gelsemium sempervirens preparation
 1309695,Gelsemium sempervirens root extract
 1493692,Gelsemium sempervirens whole extract
+2749856,gelsolin
 12574,gemcitabine
 12449,gemeprost
 4719,gemfibrozil
@@ -6180,6 +6208,7 @@ rx_cui,name
 1309428,Gentianella amarella flower extract
 1800661,Gentianella amarella whole extract
 1719251,Gentianella quinquefolia extract
+2749092,gentiopicrin
 1368642,gentisate
 1427180,gentisic acid ethanolamide
 999463,Geotrichum candidum allergenic extract
@@ -6733,6 +6762,7 @@ rx_cui,name
 1305548,hexylene glycol
 235812,hexylnicotinate
 5321,hexylresorcinol
+2749409,Hibiscus abelmoschus seed oil
 2463334,Hibiscus bifurcatus whole extract
 2123308,Hibiscus laevis flower extract
 2480116,Hibiscus lunariifolius whole extract
@@ -6884,6 +6914,7 @@ rx_cui,name
 5499,hydrogen peroxide
 1366859,hydrogen sulfite
 1440252,hydrogenated avocado oil
+2747781,hydrogenated C9 resin oil
 1309218,hydrogenated castor oil
 1364377,hydrogenated coco-glycerides
 1307683,hydrogenated coconut oil
@@ -7081,6 +7112,7 @@ rx_cui,name
 1482787,Hyssopus officinalis whole extract
 2043283,ibalizumab
 115264,ibandronate
+2749731,iberdomide
 1309960,Iberis amara seed extract
 51253,ibopamine
 2560213,ibrexafungerp
@@ -7192,6 +7224,7 @@ rx_cui,name
 1344642,influenza A-B virus immunoserum rabbit
 1312376,influenza B virus
 1657134,influenza B virus antigen
+2749310,"influenza vaccine, mRNA hemagglutinin glycoprotein"
 2480117,Inga alba bark extract
 1420970,Inga edulis seed extract
 1242806,ingenol mebutate
@@ -7208,6 +7241,7 @@ rx_cui,name
 51428,"insulin aspart, human"
 1670007,insulin degludec
 139825,insulin detemir
+2754142,insulin efsitora alfa
 274783,insulin glargine
 400008,"insulin glulisine, human"
 631657,"insulin human, rDNA origin"
@@ -7447,6 +7481,7 @@ rx_cui,name
 1803005,isostearamidopropyl ethyldimonium ethosulfate
 1426452,isostearamidopropyl morpholine lactate
 1424880,isostearate
+2751623,isosteareth-10
 1652251,isosteareth-20
 2048888,isosteareth-5
 1436959,isostearic diethanolamide
@@ -8258,6 +8293,7 @@ rx_cui,name
 2640285,Lycopodium japonicum top extract
 2099359,Lycopus europaeus whole extract
 1724428,Lycopus lucidus flowering top extract
+2748466,Lycopus lucidus var. hirtus flowering top extract
 1311148,Lycopus virginicus extract
 1342488,Lycosa tarantula preparation
 2592973,Lygodium japonicum spore extract
@@ -8623,6 +8659,7 @@ rx_cui,name
 2571661,menthyl ethylamido oxalate
 2046117,"menthyl ethylene glycol carbonate, (-)-"
 1310581,menthyl lactate
+2747784,"menthyl nicotinate, (-)-"
 1356713,"menthyl pyrrolidone carboxylate, (-),DL-"
 1368207,menthyl salicylate
 1652100,Menyanthes trifoliata extract
@@ -9336,6 +9373,7 @@ rx_cui,name
 1306188,neopentyl glycol diheptanoate
 1367136,neopentyl glycol diisostearate
 1309710,Neopicrorhiza scrophulariiflora root extract
+2754836,Neosetophoma cerealis
 7315,neostigmine
 1367111,neotame
 298665,nepafenac
@@ -10031,6 +10069,7 @@ rx_cui,name
 73710,paricalcitol
 1351897,Parietaria officinalis extract
 1650423,Parietaria officinalis leaf extract
+2753295,pariglasgene brecaparvovec
 1307586,Paris polyphylla root extract
 1793743,Paris polyphylla whole extract
 1492935,Paris quadrifolia extract
@@ -10088,6 +10127,7 @@ rx_cui,name
 892332,pecan allergenic extract
 852272,pecan pollen extract
 32987,pectin
+2753055,pectinesterase
 1600442,Pediculus humanus var. capitis
 7960,pefloxacin
 1359423,PEG & PPG-17-6 copolymer
@@ -10217,6 +10257,7 @@ rx_cui,name
 1652252,PEG-60 glyceryl stearate
 1603523,PEG-60 lanolin
 1487142,PEG-60 sorbitan stearate
+2753519,PEG-7 caprylic-capric glycerides
 2199654,PEG-7 distearate
 1307098,PEG-7 glyceryl cocoate
 1356707,PEG-7 hydrogenated castor oil
@@ -10925,6 +10966,7 @@ rx_cui,name
 1368893,polyethylene glycol 14000
 1367110,polyethylene glycol 1450
 1314382,polyethylene glycol 1500
+2754877,polyethylene glycol 18000
 1368864,polyethylene glycol 200
 1364383,polyethylene glycol 2000
 1747569,polyethylene glycol 20000
@@ -11236,6 +11278,7 @@ rx_cui,name
 314797,potassium lactate
 1362899,potassium metabisulfite
 1551457,potassium methoxysalicylate
+2753074,potassium myristate
 34316,potassium nitrate
 1365705,potassium nitrite
 2286254,potassium olivate
@@ -11311,6 +11354,7 @@ rx_cui,name
 2387832,PPG-4 myristyl ether
 1424874,PPG-5-ceteth-20
 1721621,PPG-51/SMDI copolymer
+2753575,PPG-7
 2534445,PPG-8-ceteth-20
 1314210,PPG-9
 8620,practolol
@@ -12087,6 +12131,7 @@ rx_cui,name
 1997155,Rumex obtusifolius root extract
 35890,ruscogenin
 1309509,Ruscus aculeatus root extract
+2751595,rusfertide
 852367,Russian olive pollen extract
 852158,Russian thistle pollen extract
 1441399,Russula emetica preparation
@@ -12467,6 +12512,7 @@ rx_cui,name
 2533913,Silene laciniata whole extract
 1426646,silica dimethyl silylate
 1790287,"silica, trimethylsilyl capped"
+2751487,silicified microcrystalline cellulose (65M)
 9774,silicon
 9771,silicon dioxide
 314826,"silicon dioxide, colloidal"
@@ -12577,6 +12623,7 @@ rx_cui,name
 89900,sodium bitartrate
 1311138,sodium bromide
 1997000,sodium C8-10 alkyl sulfate
+2747785,sodium caprate
 2565926,sodium caprylyl sulfonate
 36685,sodium carbonate
 1600779,sodium carboxymethyl beta-glucan (DS 0.65-0.85)
@@ -12705,6 +12752,8 @@ rx_cui,name
 61148,somatropin
 1427014,sometribove
 1659191,sonidegib
+2750247,sonrotoclax
+2748243,Sophora alopecuroides whole extract
 1307593,Sophora flavescens root extract
 1442706,Sophora flavescens whole extract
 2630723,Sophora pachycarpa whole extract
@@ -13371,6 +13420,7 @@ rx_cui,name
 2670453,taurolidine
 2613950,taurursodiol
 1543173,tavaborole
+2754360,tavapadon
 2700758,taxifolin
 2107063,Taxillus chinensis top extract
 1314222,Taxus baccata fruit extract
@@ -13385,6 +13435,7 @@ rx_cui,name
 69627,tea tree oil
 1313771,TEA-dodecylbenzenesulfonate
 2590743,tebentafusp
+2750185,tebipenem pivoxil
 2571856,technetium
 2619426,teclistamab
 2055104,tecovirimat
@@ -14399,6 +14450,7 @@ rx_cui,name
 2586354,vosoritide
 2265678,voxelotor
 1939323,voxilaprevir
+2751855,vusolimogene oderparepvec
 2604578,vutrisiran
 314470,walnut allergenic extract
 1337618,walnut oil
@@ -14591,11 +14643,14 @@ rx_cui,name
 1368476,zeranol
 68503,ziconotide
 2744813,zidebactam
+2748283,zidesamtinib
 11413,zidovudine
 2725985,ziftomenib
 40575,zileuton
+2753030,zilganersen
 1727538,zilpaterol
 2672489,zilucoplan
+2754647,zilurgisertib
 11416,zinc
 58295,zinc acetate
 1370110,zinc acetylmethionate

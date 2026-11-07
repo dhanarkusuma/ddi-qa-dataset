@@ -1,0 +1,26 @@
+[project]
+name = "ddi-qa-dataset"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Dhanar Kusuma", email = "dhanar.j.kusuma@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=3.1.1",
+    "tqdm>=4.70.1",
+]
+
+[project.scripts]
+ddi-qa-dataset = "ddi_qa_dataset:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+]
