@@ -26,17 +26,13 @@ flowchart TB
     end
 
     subgraph S5 ["005_synonym_rx_norm_from_rx_pin.ipynb"]
-      precise_ingredients --> master_precise_ingredients["rx_norm_master_precise_ingredients.csv"]
-      master_precise_ingredients -->  RxNavAPI4["RxNorm API (/rxcui/{rxcui}/proprietary.json) for each precise_ingredient"]
+      precise_ingredients --> normalize_precise_ingredients["rx_norm_normalize_precise_ingredients.csv"]
+      normalize_precise_ingredients -->  RxNavAPI4["RxNorm API (/rxcui/{rxcui}/proprietary.json) for each precise_ingredient"]
       RxNavAPI4 --> master_pin_synonyms["rx_norm_precise_ingredients_synonyms.csv"]
     end
 
-    subgraph S6 ["006_bpom_drug_names_cleaning.ipynb"]
-        BPOMDrugDataset["BPOM Satudata Komoditi Obat (https://satudata.pom.go.id/datasets/364-app---master-produk-komoditi-obat?lang=id)"] --> bpom_drug["bpom_drug_cleaned.csv"]
-    end
-
-    subgraph S7 ["007_brand_rxnorm.ipynb"]
-        RxNavAPI5["Brand Entity RxNorm (/allconcepts.json?tty=BN)"] --> brand_rxnorm["brand_rxnorm.csv"]
+    subgraph S6 ["006_brand_rxnorm.ipynb"]
+        RxNavAPI5["Brand Entity RxNorm (/allconcepts.json?tty=BN)"] --> brand_products["rx_norm_brand_products.csv"]
     end
 
     S1 ~~~ S2
@@ -44,7 +40,6 @@ flowchart TB
     S3 ~~~ S4
     S4 ~~~ S5
     S5 ~~~ S6
-    S6 ~~~ S7
 ```
 
 ---
@@ -53,26 +48,33 @@ flowchart TB
 
 | File Name | Generated In | Rows | Columns | Purpose |
 | :--- | :--- | :--- | :--- | :--- |
-| 1. [`ddinter_downloads_code_A.csv`](./ddinter2.0/ddinter_downloads_code_A.csv)<br>2. [`ddinter_downloads_code_B.csv`](./ddinter2.0/ddinter_downloads_code_B.csv)<br>3. [`ddinter_downloads_code_D.csv`](./ddinter2.0/ddinter_downloads_code_D.csv)<br>4. [`ddinter_downloads_code_H.csv`](./ddinter2.0/ddinter_downloads_code_H.csv)<br>5. [`ddinter_downloads_code_L.csv`](./ddinter2.0/ddinter_downloads_code_L.csv)<br>6. [`ddinter_downloads_code_P.csv`](./ddinter2.0/ddinter_downloads_code_P.csv)<br>7. [`ddinter_downloads_code_R.csv`](./ddinter2.0/ddinter_downloads_code_R.csv)<br>8. [`ddinter_downloads_code_V.csv`](./ddinter2.0/ddinter_downloads_code_V.csv) | `001_ddis_inter_2_exploration.ipynb` | 222,383 | 5 |  Drug-Drug Interaction pairs with level (DDInter 2.0). |
+| 1. [`ddinter_downloads_code_A.csv`](./ddinter2.0/ddinter_downloads_code_A.csv)<br>2. [`ddinter_downloads_code_B.csv`](./ddinter2.0/ddinter_downloads_code_B.csv)<br>3. [`ddinter_downloads_code_D.csv`](./ddinter2.0/ddinter_downloads_code_D.csv)<br>4. [`ddinter_downloads_code_H.csv`](./ddinter2.0/ddinter_downloads_code_H.csv)<br>5. [`ddinter_downloads_code_L.csv`](./ddinter2.0/ddinter_downloads_code_L.csv)<br>6. [`ddinter_downloads_code_P.csv`](./ddinter2.0/ddinter_downloads_code_P.csv)<br>7. [`ddinter_downloads_code_R.csv`](./ddinter2.0/ddinter_downloads_code_R.csv)<br>8. [`ddinter_downloads_code_V.csv`](./ddinter2.0/ddinter_downloads_code_V.csv) | `001_ddis_inter_2_exploration.ipynb` | 222,383 | 5 | Drug-Drug Interaction pairs with level (DDInter 2.0). |
 | [`rx_norm_ingredients.csv`](./rx_norm_ingredients.csv) | `002_ingredients_rx_norm.ipynb` | 14,663 | 2 | RxNorm standard active ingredients (`tty=IN`). |
 | [`rx_norm_master_precise_ingredients.csv`](./rx_norm_master_precise_ingredients.csv) | `003_precise_ingredients_rx_norm.ipynb` | 3,659 | 2 | RxNorm Precise Ingredients (`tty=PIN`). |
 | [`rx_norm_ingredient_synonyms.csv`](./rx_norm_ingredient_synonyms.csv) | `004_synonym_rx_norm_from_rx_ingredients.ipynb` | 14,663 | 3 | RxNorm standard active ingredient synonyms (tty=`SY`, `FSY`). |
 | [`rx_norm_precise_ingredients_synonyms.csv`](./rx_norm_precise_ingredients_synonyms.csv) | `005_synonym_rx_norm_from_rx_pin.ipynb` | 3,659 | 3 | RxNorm precise ingredient synonyms (tty=`SY`, `FSY`). |
-| [`bpom_drug_cleaned.csv`](./bpom_drug_cleaned.csv) | `006_parse_bpom_komoditi_obat.ipynb` | 9,257 | 6 | Cleaned and standardized BPOM drug product data. |
-| [`brand_rxnorm.csv`](./brand_rxnorm.csv) | `007_brand_rxnorm.ipynb` | 5,120 | 2 | RxNorm Brand with it's ingredients |
+| [`brand_rxnorm.csv`](./brand_rxnorm.csv) | `006_brand_rxnorm.ipynb` | 5,114 | 2 | RxNorm Brand with it's ingredients |
 
 ---
 
 ## 📁 File Specifications
 
 ### 1. `ddinter_downloads_code_A.csv`
+
 ### 2. `ddinter_downloads_code_B.csv`
+
 ### 3. `ddinter_downloads_code_D.csv`
+
 ### 4. `ddinter_downloads_code_H.csv`
+
 ### 5. `ddinter_downloads_code_L.csv`
+
 ### 6. `ddinter_downloads_code_P.csv`
+
 ### 7. `ddinter_downloads_code_R.csv`
+
 ### 8. `ddinter_downloads_code_V.csv`
+
 - **Source Notebook:** `../notebooks/01_acquisition/001_ddis_inter_2_exploration.ipynb`
 - **Source:** DDInter 2.0 ([https://ddinter2.scbdd.com](https://ddinter2.scbdd.com)).
 - **Description:** Drug-drug interaction dataset containing pairwise interactions and clinical effect descriptions.
@@ -83,6 +85,7 @@ flowchart TB
   - `Drug_B` (*string*): Second drug name.
   - `Level` (*string*): Clinical severity level of the interaction (e.g., 'major', 'moderate', 'minor', 'unknown').
 - **Sample:**
+
   ```csv
   DDInterID_A,Drug_A,DDInterID_B,Drug_B,Level
   DDInter1263,Naltrexone,DDInter1,Abacavir,Moderate
@@ -95,12 +98,14 @@ flowchart TB
 ---
 
 ### 9. `rx_norm_ingredients.csv`
+
 - **Source Notebook:** `../notebooks/01_acquisition/002_ingredients_rx_norm.ipynb`
-- **Description:** Master reference dictionary of active ingredients (`tty=IN`) fetched globally from RxNorm (`/allconcepts.json?tty=IN`). Used as standardized anchor entities for normalizing drug compositions in `ddinter_downloads_code_*.csv` and also used to normalizing ingredient names in `bpom_drug_cleaned.csv`.
+- **Description:** Master reference dictionary of active ingredients (`tty=IN`) fetched globally from RxNorm (`/allconcepts.json?tty=IN`). Used as standardized anchor entities for normalizing drug compositions in `ddinter_downloads_code_*.csv` and also used to normalizing ingredient names in `rx_norm_brand_products.csv`.
 - **Schema:**
   - `rx_cui` (*string/integer*): Standard RxNorm ingredient concept ID.
   - `name` (*string*): Standard ingredient name.
 - **Sample:**
+
   ```csv
   rx_cui,name
   7052,morphine
@@ -109,14 +114,16 @@ flowchart TB
 
 ---
 
-### 10. `rx_norm_master_precise_ingredients.csv`
+### 10. `rx_norm_normalize_precise_ingredients.csv`
+
 - **Source Notebook:** `../notebooks/01_acquisition/005_synonym_rx_norm_from_rx_pin.ipynb`
-- **Description:** Master reference dictionary of precise active ingredients (`tty=PIN`) fetched globally from RxNorm (`/allrelated.json`) from every item in `rx_norm_ingredients.csv`. Used as standardized anchor entities for normalizing drug compositions in `ddinter_downloads_code_*.csv` and also used to normalizing ingredient names in `bpom_drug_cleaned.csv` using precise ingredients as fallback to ingredients.
+- **Description:** Master reference dictionary of precise active ingredients (`tty=PIN`) fetched globally from RxNorm (`/allrelated.json`) from every item in `rx_norm_ingredients.csv`. Used as standardized anchor entities for normalizing drug compositions in `ddinter_downloads_code_*.csv` and also used to normalizing ingredient names in `rx_norm_brand_products.csv` using precise ingredients as fallback to ingredients.
 - **Schema:**
   - `rxcui` (*string/integer*): Standard RxNorm precise ingredient concept ID.
   - `rxcui_ingredient` (*string/integer*): RxCUI of the associated ingredient from `rx_norm_ingredients.csv`.
   - `name` (*string*): Standard precise ingredient name.
 - **Sample:**
+
   ```csv
   rxcui,rxcui_ingredient,name
   1000104,1712,incobotulinumtoxinA
@@ -128,13 +135,15 @@ flowchart TB
 ---
 
 ### 11. `rx_norm_ingredient_synonyms.csv`
+
 - **Source Notebook:** `../notebooks/01_acquisition/004_synonym_rx_norm_from_rx_ingredients.ipynb`
-- **Description:** Synonym dictionary of active ingredients (`tty=IN`) fetched globally from RxNorm (`/rxcui/{rxcui}/proprietary.json`). Used as standardized anchor entities for normalizing drug compositions in `db_drug_interaction.csv` and also used to normalizing ingredient names in `bpom_drug_cleaned.csv`.
+- **Description:** Synonym dictionary of active ingredients (`tty=IN`) fetched globally from RxNorm (`/rxcui/{rxcui}/proprietary.json`). Used as standardized anchor entities for normalizing drug compositions in `db_drug_interaction.csv` and also used to normalizing ingredient names in `rx_norm_brand_products.csv`.
 - **Schema:**
   - `rx_cui` (*string/integer*): Standard RxNorm ingredient concept ID.
   - `name` (*string*): Standard ingredient name.
   - `aliases` (*list-formatted string*): JSON/eval list of synonyms, brand aliases, and chemical variations retrieved from RxNorm.
 - **Sample:**
+
   ```csv
   rx_cui,name,aliases
   7052,morphine,"['morphine', 'Morphine Sulfate']"
@@ -144,13 +153,15 @@ flowchart TB
 ---
 
 ### 12. `rx_norm_precise_ingredients_synonyms.csv`
+
 - **Source Notebook:** `../notebooks/01_acquisition/005_synonym_rx_norm_from_rx_pin.ipynb`
-- **Description:** Synonym dictionary of precise active ingredients (`tty=PIN`) fetched globally from RxNorm (`/rxcui/{rxcui}/proprietary.json`). Used as standardized anchor entities for normalizing drug compositions in `db_drug_interaction.csv` and also used to normalizing ingredient names in `bpom_drug_cleaned.csv`.
+- **Description:** Synonym dictionary of precise active ingredients (`tty=PIN`) fetched globally from RxNorm (`/rxcui/{rxcui}/proprietary.json`). Used as standardized anchor entities for normalizing drug compositions in `db_drug_interaction.csv` and also used to normalizing ingredient names in `rx_norm_brand_products.csv`.
 - **Schema:**
   - `rx_cui` (*string/integer*): Standard RxNorm ingredient concept ID.
   - `name` (*string*): Standard ingredient name.
   - `aliases` (*list-formatted string*): JSON/eval list of synonyms, brand aliases, and chemical variations retrieved from RxNorm.
 - **Sample:**
+
   ```csv
   rx_cui,name,aliases
   7052,morphine,"['morphine', 'Morphine Sulfate']"
@@ -159,26 +170,32 @@ flowchart TB
 
 ---
 
-### 13. `bpom_drug_cleaned.csv`
-- **Source Notebook:** `../notebooks/01_acquisition/006_parse_bpom_komoditi_obat.ipynb`
-- **Description:** Cleaned and standardized BPOM drug product data.
+### 13. `rx_norm_brands.csv`
+
+- **Source Notebook:** `../notebooks/01_acquisition/006_brand_rxnorm.ipynb`
+- **Description:** RxNorm brand entities.
 - **Schema:**
-  - `id` (*integer*): BPOM Master Produk Komoditi Obat ID.
-  - `name` (*string*): Commercial brand name in Indonesia (e.g. *Panadol*, *Parofen*, *Lanovit*).
-  - `raw_ingredients` (*list-formatted string*): Unnormalized compositions.
-  - `ingredients` (*list-formatted string*): Normalized list of compositions parsed from `raw_ingredients`.
-  - `issued_date` (*date string*): Date of issuance of the drug product's marketing authorization.
-  - `expired_date` (*date string*): Expiration date of the drug product's marketing authorization.
-- **Sample:**
+  - `rx_cui` (*string*): Standard RxNorm brand concept ID.
+  - `name` (*string*): Standard brand name.
+  - **Sample:**
+
   ```csv
-  id,name,raw_ingredients,ingredients,issued_date,expired_date
-  15344,HERCLOV,VALACICLOVIR HYDROCHLORIDE,['VALACICLOVIR HYDROCHLORIDE'],2019-07-05,2024-12-31
-  4392,PROLEVOX 500,LEVOFLOXACIN HEMIHYDRATE,['LEVOFLOXACIN HEMIHYDRATE'],2019-09-06,2024-09-06
+  rx_cui,name
+  1536545,4XLA Activator
+  1117240,A+D Diaper Rash
+  705892,A+D Original
+  214907,A-Phedrin
+  605082,A.E.R. Witch Hazel
+  2723903,Aagylur
+  1358725,Aardora Anti-Fungal Maximum Strength
+  2536435,Abecma
+  81507,Abelcet
   ```
 
 ---
 
-### 14. `brand_rxnorm.csv`
+### 14. `rx_norm_brand_products.csv`
+
 - **Source Notebook:** `../notebooks/01_acquisition/007_brand_rxnorm.ipynb`
 - **Description:** RxNorm brand entities.
 - **Schema:**
@@ -189,6 +206,7 @@ flowchart TB
   - `ingredients` (*list-formatted object*): Normalized list of ingredients parsed from json object string.
   - `precise_ingredients` (*list-formatted object*): Normalized list of precise ingredients parsed from json object string.
 - **Sample:**
+
   ```csv
   rx_cui,name,product_rxcui,product_name,ingredients,precise_ingredients
   1536545,4XLA Activator,1536549,lactic acid 25 MG/ML Topical Solution [4XLA Activator],"[{'rx_cui': '114202', 'name': 'lactate', 'tty': 'IN'}]","[{'rx_cui': '28393', 'name': 'lactic acid', 'tty': 'PIN'}]"
