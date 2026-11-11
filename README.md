@@ -49,11 +49,11 @@ flowchart TB
 | File Name | Generated In | Rows | Columns | Purpose |
 | :--- | :--- | :--- | :--- | :--- |
 | 1. [`ddinter_downloads_code_A.csv`](./ddinter2.0/ddinter_downloads_code_A.csv)<br>2. [`ddinter_downloads_code_B.csv`](./ddinter2.0/ddinter_downloads_code_B.csv)<br>3. [`ddinter_downloads_code_D.csv`](./ddinter2.0/ddinter_downloads_code_D.csv)<br>4. [`ddinter_downloads_code_H.csv`](./ddinter2.0/ddinter_downloads_code_H.csv)<br>5. [`ddinter_downloads_code_L.csv`](./ddinter2.0/ddinter_downloads_code_L.csv)<br>6. [`ddinter_downloads_code_P.csv`](./ddinter2.0/ddinter_downloads_code_P.csv)<br>7. [`ddinter_downloads_code_R.csv`](./ddinter2.0/ddinter_downloads_code_R.csv)<br>8. [`ddinter_downloads_code_V.csv`](./ddinter2.0/ddinter_downloads_code_V.csv) | `001_ddis_inter_2_exploration.ipynb` | 222,383 | 5 | Drug-Drug Interaction pairs with level (DDInter 2.0). |
-| [`rx_norm_ingredients.csv`](./rx_norm_ingredients.csv) | `002_ingredients_rx_norm.ipynb` | 14,663 | 2 | RxNorm standard active ingredients (`tty=IN`). |
-| [`rx_norm_master_precise_ingredients.csv`](./rx_norm_master_precise_ingredients.csv) | `003_precise_ingredients_rx_norm.ipynb` | 3,659 | 2 | RxNorm Precise Ingredients (`tty=PIN`). |
-| [`rx_norm_ingredient_synonyms.csv`](./rx_norm_ingredient_synonyms.csv) | `004_synonym_rx_norm_from_rx_ingredients.ipynb` | 14,663 | 3 | RxNorm standard active ingredient synonyms (tty=`SY`, `FSY`). |
-| [`rx_norm_precise_ingredients_synonyms.csv`](./rx_norm_precise_ingredients_synonyms.csv) | `005_synonym_rx_norm_from_rx_pin.ipynb` | 3,659 | 3 | RxNorm precise ingredient synonyms (tty=`SY`, `FSY`). |
-| [`brand_rxnorm.csv`](./brand_rxnorm.csv) | `006_brand_rxnorm.ipynb` | 5,114 | 2 | RxNorm Brand with it's ingredients |
+| [`rx_norm_ingredients.csv`](./rxnorm/rx_norm_ingredients.csv) | `002_ingredients_rx_norm.ipynb` | 14,663 | 2 | RxNorm standard active ingredients (`tty=IN`). |
+| [`rx_norm_master_precise_ingredients.csv`](./rxnorm/rx_norm_master_precise_ingredients.csv) | `003_precise_ingredients_rx_norm.ipynb` | 3,659 | 2 | RxNorm Precise Ingredients (`tty=PIN`). |
+| [`rx_norm_ingredient_synonyms.csv`](./rxnorm/rx_norm_ingredient_synonyms.csv) | `004_synonym_rx_norm_from_rx_ingredients.ipynb` | 14,663 | 3 | RxNorm standard active ingredient synonyms (tty=`SY`, `FSY`). |
+| [`rx_norm_precise_ingredients_synonyms.csv`](./rxnorm/rx_norm_precise_ingredients_synonyms.csv) | `005_synonym_rx_norm_from_rx_pin.ipynb` | 3,659 | 3 | RxNorm precise ingredient synonyms (tty=`SY`, `FSY`). |
+| [`rx_norm_brands.csv`](./rxnorm/rx_norm_brands.csv) | `006_brand_rxnorm.ipynb` | 5,114 | 2 | RxNorm Brand with it's ingredients |
 
 ---
 
